@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bakare Lateef Bisoye | AI Automation Specialist</title>
+
+<meta name="description" content="Portfolio of Bakare Lateef Bisoye, Graphic Designer and AI Automation Specialist, showcasing workflow automation, AI agents, and creative technology projects.">
+
+<style>
+:root {
+    --bg: #080d18;
+    --surface: #111a2b;
+    --surface-light: #18243a;
+    --accent: #38d9c5;
+    --text: #f1f5f9;
+    --muted: #a5b2c5;
+    --border: rgba(255,255,255,0.09);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, 90%);
+    margin: auto;
+}
+
+/* NAVIGATION */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(8,13,24,0.95);
+    border-bottom: 1px solid var(--border);
+    backdrop-filter: blur(15px);
+}
+
+.navbar {
+    min-height: 76px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--muted);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+    padding: 90px 0;
+    background:
+        radial-gradient(circle at 85% 25%, rgba(56,217,197,0.12), transparent 30%),
+        var(--bg);
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.eyebrow {
+    color: var(--accent);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.08;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: var(--accent);
+}
+
+.hero h2 {
+    color: var(--muted);
+    font-size: clamp(18px, 3vw, 25px);
+    font-weight: 400;
+    margin-bottom: 22px;
+}
+
+.hero p {
+    max-width: 680px;
+    color: var(--muted);
+    font-size: 17px;
+    margin-bottom: 32px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 7px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: #07121a;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(56,217,197,0.2);
+}
+
+.btn-outline {
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}
+
+.btn-outline:hover {
+    background: var(--accent);
+    color: #07121a;
+}
+
+/* GENERAL SECTIONS */
+
+section {
+    padding: 95px 0;
+    scroll-margin-top: 75px;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading .eyebrow {
+    margin-bottom: 8px;
+}
+
+.section-heading h2 {
+    font-size: clamp(30px, 5vw, 42px);
+}
+
+.section-heading p {
+    color: var(--muted);
+    margin-top: 10px;
+}
+
+/* ABOUT */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.about-text p {
+    color: var(--muted);
+    margin-bottom: 18px;
+}
+
+.info-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.info-card h3 {
+    color: var(--accent);
+    margin-bottom: 22px;
+}
+
+.education-item {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-item strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.education-item span {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* SKILLS */
+
+.skills-section {
+    background: #0c1422;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill-card {
+    padding: 25px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.skill-card .icon {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* PROJECTS */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.project-visual {
+    min-height: 170px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(135deg, #142b3b, #193c48);
+    font-size: 48px;
+}
+
+.project-info {
+    padding: 25px;
+}
+
+.project-info h3 {
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: var(--muted);
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.project-tag {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--accent);
+    background: rgba(56,217,197,0.09);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* CONTACT */
+
+.contact-section {
+    background: #0c1422;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 650px;
+    margin: auto;
+}
+
+.contact-content p {
+    color: var(--muted);
+    margin: 20px 0 30px;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 76px;
+        left: 0;
+        width: 100%;
+        background: var(--surface);
+        flex-direction: column;
+        gap: 0;
+        padding: 15px 5%;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 12px 0;
+    }
+
+    .about-grid,
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 78vh;
+    }
+
+    section {
+        padding: 70px 0;
+    }
+
+    .logo {
+        font-size: 17px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="container navbar">
+
+        <a href="#home" class="logo">Bakare Lateef Bisoye.</a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </div>
+</header>
+
+<main>
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+    <div class="container">
+        <div class="hero-content">
+
+            <div class="eyebrow">Graphic Designer & AI Automation Specialist</div>
+
+            <h1>
+                Bakare Lateef <span>Bisoye</span>
+            </h1>
+
+            <h2>Creative Thinking. Intelligent Automation.</h2>
+
+            <p>
+                Building intelligent automation workflows and AI-powered
+                solutions that help businesses simplify operations,
+                improve efficiency, and work smarter.
+            </p>
+
+            <div class="buttons">
+                <a href="#projects" class="btn btn-primary">
+                    Explore My Projects
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Get In Touch
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+
+<section id="about">
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow">Who I Am</div>
+            <h2>About Me</h2>
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-text">
+
+                <p>
+                    I am Bakare Lateef Bisoye, a creative professional
+                    with a background in Graphic Design and AI Automation.
+                </p>
+
+                <p>
+                    With my creative background and technical training,
+                    I am passionate about building intelligent solutions
+                    that simplify business operations, improve efficiency,
+                    and solve real-world problems.
+                </p>
+
+                <p>
+                    My interests include AI Automation, Workflow Development,
+                    AI Agents, Web Design, Graphic Design, and
+                    technology-driven innovation.
+                </p>
+
+            </div>
+
+            <div class="info-card">
+
+                <h3>Education & Professional Background</h3>
+
+                <div class="education-item">
+                    <strong>Graphic Designer</strong>
+                    <span>Creative design and visual communication.</span>
+                </div>
+
+                <div class="education-item">
+                    <strong>Diploma in Infographie</strong>
+                    <span>Studio M Casablanca</span>
+                </div>
+
+                <div class="education-item">
+                    <strong>AI Automation Training</strong>
+                    <span>Techcrush</span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+
+<section class="skills-section" id="skills">
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow">What I Do</div>
+            <h2>Technical Skills</h2>
+            <p>My current areas of focus.</p>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="icon">⚙️</div>
+                <h3>AI Automation</h3>
+                <p>Workflow development, process automation, and intelligent business solutions.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">🤖</div>
+                <h3>AI Agents</h3>
+                <p>AI-powered assistants, LLM integration, and automated support systems.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">🔗</div>
+                <h3>API Integration</h3>
+                <p>Connecting applications, services, and automation platforms.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">🔄</div>
+                <h3>n8n Workflow Development</h3>
+                <p>Building automation workflows that connect different business processes.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">🎨</div>
+                <h3>Graphic Design</h3>
+                <p>Visual communication, creative design, and digital content.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="icon">💻</div>
+                <h3>Web Design</h3>
+                <p>Website structure, interface design, and user experience.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+    <div class="container">
+
+        <div class="section-heading">
+            <div class="eyebrow">My Work</div>
+            <h2>Featured Projects</h2>
+            <p>Automation concepts and practical workflow development.</p>
+        </div>
+
+        <div class="projects-grid">
+
+            <article class="project-card">
+                <div class="project-visual">🏡</div>
+                <div class="project-info">
+                    <h3>Real Estate AI Lead Bot</h3>
+                    <p>
+                        An AI-powered lead intake and qualification
+                        workflow designed to organize inquiries,
+                        assess lead information, and generate
+                        personalized follow-up messages.
+                    </p>
+                    <span class="project-tag">n8n · AI · Automation</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-visual">🛍️</div>
+                <div class="project-info">
+                    <h3>NexaCart AI Support Agent</h3>
+                    <p>
+                        A Shopify customer support automation project
+                        designed to handle order inquiries, product
+                        questions, shipping requests, and support
+                        escalation.
+                    </p>
+                    <span class="project-tag">Shopify · n8n · AI</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-visual">📱</div>
+                <div class="project-info">
+                    <h3>LinkedIn Content Posting Agent</h3>
+                    <p>
+                        An AI-assisted content workflow concept
+                        focused on simplifying content preparation
+                        and social media publishing tasks.
+                    </p>
+                    <span class="project-tag">AI Agents · Workflow Automation</span>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-visual">⚡</div>
+                <div class="project-info">
+                    <h3>Business Process Automation</h3>
+                    <p>
+                        Intelligent workflow solutions focused on
+                        connecting applications, reducing repetitive
+                        tasks, and improving operational efficiency.
+                    </p>
+                    <span class="project-tag">API · Integration · n8n</span>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="contact-section" id="contact">
+    <div class="container contact-content">
+
+        <div class="eyebrow">Let's Connect</div>
+
+        <h2>Have a Project in Mind?</h2>
+
+        <p>
+            I am interested in collaborating on creative projects,
+            AI automation solutions, and technology-driven ideas.
+            Let's connect and explore what we can build together.
+        </p>
+
+        <div class="contact-buttons">
+
+            <a href="https://www.linkedin.com/in/bakare-lateef-bisoye-770359369/"
+               class="btn btn-primary"
+               target="_blank"
+               rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+            <a href="https://www.behance.net/gallery/236787099/Protfolio"
+               class="btn btn-outline"
+               target="_blank"
+               rel="noopener noreferrer">
+                Behance Portfolio
+            </a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Abduldesignit234%40gmail.com"
+               class="btn btn-outline"
+               target="_blank"
+               rel="noopener noreferrer">
+                Email Me
+            </a>
+
+            <a href="https://wa.me/212628336797"
+               class="btn btn-outline"
+               target="_blank"
+               rel="noopener noreferrer">
+                WhatsApp
+            </a>
+
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>
+            © <span id="year"></span> Bakare Lateef Bisoye.
+            All Rights Reserved.
+        </p>
+        <p>Graphic Designer | AI Automation Specialist</p>
+    </div>
+</footer>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+
+    const isOpen = navLinks.classList.contains("active");
+
+    menuToggle.setAttribute("aria-expanded", isOpen);
+    menuToggle.textContent = isOpen ? "✕" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        navLinks.classList.remove("active");
+        menuToggle.textContent = "☰";
+        menuToggle.setAttribute("aria-expanded", "false");
+    });
+});
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
